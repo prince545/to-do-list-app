@@ -1,0 +1,117 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* To-Do List Container */
+.to-do-list {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+/* Title Styling */
+.to-do-list h1 {
+  font-size: 24px;
+  color: #5d5dff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input Field */
+.to-do-list input {
+  width: calc(100% - 100px);
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #dcdcdc;
+  border-radius: 6px;
+  margin-right: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.to-do-list input:focus {
+  border-color: #5d5dff;
+}
+
+/* Add Task Button */
+.to-do-list button {
+  background: #5d5dff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.to-do-list button:hover {
+  background: #4b4bcc;
+}
+
+/* Task List */
+.to-do-list ol {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.to-do-list li {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Task Text */
+.to-do-list .text {
+  flex-grow: 1;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* Delete and Move Buttons */
+.to-do-list .delete-button,
+.to-do-list .move-button {
+  background: #ff5d5d;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: background 0.3s ease;
+}
+
+.to-do-list .delete-button:hover {
+  background: #cc4a4a;
+}
+
+.to-do-list .move-button {
+  background: #5d5dff;
+}
+
+.to-do-list .move-button:hover {
+  background: #4b4bcc;
+}
